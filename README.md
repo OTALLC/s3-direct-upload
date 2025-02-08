@@ -4,6 +4,12 @@ This repository contains the code for deploying an application on AWS Elastic Be
 
 ## Prerequisites
 
+- **S3 Bucket** 
+  You need an existing s3 bucket to upload to.  
+
+- **ACM Certificate**
+  Request ACM Certificate for your HTTPS endpoint; record ARN. 
+
 - **AWS CLI**  
   Ensure you have the [AWS CLI installed](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
@@ -75,6 +81,12 @@ eb create s3-direct-prod
 	Note: Replace s3-direct-prod with your desired environment name.
 
 This command will create an environment, provision the necessary resources (including a load balancer), and deploy your application code.
+
+**Terminate**
+To terminate your app/environment: 
+```bash
+eb terminate
+```
 
 **Additional Configuration Files**<br>
 - .ebextensions/
