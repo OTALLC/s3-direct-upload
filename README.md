@@ -4,10 +4,10 @@ This repository contains the code for deploying an application on AWS Elastic Be
 
 ## Prerequisites
 
-- **S3 Bucket** 
+- **S3 Bucket** <br>
   You need an existing s3 bucket to upload to.  
 
-- **ACM Certificate**
+- **ACM Certificate**<br>
   Request ACM Certificate for your HTTPS endpoint; record ARN. 
 
 - **AWS CLI**  
