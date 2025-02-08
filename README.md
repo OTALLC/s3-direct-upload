@@ -27,15 +27,21 @@ export AWS_DEFAULT_PROFILE=profile-name
 
 For AWS SSO users, sign in via the CLI:
 
-`aws sso login`
+```bash
+aws sso login
+```
 
 You can verify that you’re connected to the right AWS account and have the expected access by listing your S3 buckets. Look for your expected bucket:
 
-`aws s3 ls`
+```bash
+aws s3 ls
+```
 
 **Installing Dependencies**
 Before deployment, install the necessary Node.js tools and project dependencies. Run:
-`npm install`
+```bash
+npm install
+```
 
 **Configuration**
 
@@ -43,7 +49,9 @@ Before deploying the application, make sure to replace all placeholder variables
 
 For example, if you see a variable like:
 
-`Resource: "arn:aws:s3:::INSERT_YOUR_BUCKET_NAME/*"`
+```bash
+Resource: "arn:aws:s3:::INSERT_YOUR_BUCKET_NAME/*"
+```
 
 Replace INSERT_YOUR_BUCKET_NAME with your actual S3 bucket name.
 
@@ -60,7 +68,9 @@ This ensures that your domain directs traffic to your deployed environment.
 
 To create a new Elastic Beanstalk environment using the EB CLI, run:
 
-`eb create s3-direct-prod`
+```bash
+eb create s3-direct-prod
+```
 
 	Note: Replace s3-direct-prod with your desired environment name.
 
