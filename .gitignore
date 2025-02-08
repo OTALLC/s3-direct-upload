@@ -1,0 +1,39 @@
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+!.elasticbeanstalk/*.local.yml
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Elastic Beanstalk
+.elasticbeanstalk/
+
+# AWS credentials
+.aws/
+
+# MacOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Build files
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
